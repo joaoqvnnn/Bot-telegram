@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fofoca Bot - Dashboard</title>
+    <link rel="stylesheet" href="../admin-assets/css/admin.css">
+    <link rel="stylesheet" href="../admin-assets/css/dashboard.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>🔐 Fofoca Bot</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="active">
+                    <span>📊</span> Dashboard
+                </a>
+                <a href="solicitacoes.html">
+                    <span>📥</span> Solicitações
+                </a>
+                <a href="campanhas.html">
+                    <span>📢</span> Campanhas
+                </a>
+                <a href="calendario.html">
+                    <span>📅</span> Calendário
+                </a>
+                <a href="formatos.html">
+                    <span>📦</span> Formatos
+                </a>
+                <a href="precos.html">
+                    <span>💰</span> Preços
+                </a>
+                <a href="regras.html">
+                    <span>⚙️</span> Regras
+                </a>
+                <a href="aprovacoes.html">
+                    <span>🟢</span> Aprovados
+                </a>
+                <a href="recusas.html">
+                    <span>🔴</span> Recusados
+                </a>
+                <a href="revisoes.html">
+                    <span>🟡</span> Em revisão
+                </a>
+                <a href="pagamentos.html">
+                    <span>💳</span> Pagamentos
+                </a>
+                <a href="usuarios.html">
+                    <span>👥</span> Usuários
+                </a>
+                <a href="seguranca.html">
+                    <span>🔐</span> Segurança
+                </a>
+                <a href="logs.html">
+                    <span>📜</span> Logs
+                </a>
+                <a href="notificacoes.html">
+                    <span>🔔</span> Notificações
+                </a>
+                <a href="equipe.html">
+                    <span>👨‍💼</span> Equipe
+                </a>
+                <a href="configuracoes.html">
+                    <span>⚙️</span> Configurações
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn-logout">Sair</button>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1>📊 Dashboard</h1>
+                <div class="topbar-actions">
+                    <span id="admin-name"></span>
+                </div>
+            </header>
+
+            <!-- Cards de Estatísticas -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📥</div>
+                    <div class="stat-info">
+                        <h3 id="stat-solicitacoes">0</h3>
+                        <p>Solicitações</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🟢</div>
+                    <div class="stat-info">
+                        <h3 id="stat-aprovados">0</h3>
+                        <p>Aprovados</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🔴</div>
+                    <div class="stat-info">
+                        <h3 id="stat-recusados">0</h3>
+                        <p>Recusados</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🟡</div>
+                    <div class="stat-info">
+                        <h3 id="stat-revisao">0</h3>
+                        <p>Em revisão</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">💳</div>
+                    <div class="stat-info">
+                        <h3 id="stat-pagamentos">0</h3>
+                        <p>Pagamentos</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3 id="stat-usuarios">0</h3>
+                        <p>Usuários</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../admin-assets/js/dashboard.js"></script>
+</body>
+</html>
