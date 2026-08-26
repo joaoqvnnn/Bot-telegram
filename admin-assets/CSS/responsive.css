@@ -1,0 +1,259 @@
+/* ==========================================
+   FOFOCA BOT - Estilos Responsivos
+   ========================================== */
+
+/* ==========================================
+   TABLETS (768px - 1024px)
+   ========================================== */
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+/* ==========================================
+   CELULARES GRANDES (480px - 768px)
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* Sidebar */
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar-logo h2 {
+        display: none;
+    }
+
+    .sidebar-nav a {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .sidebar-nav a span:last-child {
+        display: none;
+    }
+
+    .sidebar-footer {
+        padding: 10px;
+    }
+
+    .btn-logout {
+        font-size: 0;
+        padding: 10px;
+    }
+
+    .btn-logout::after {
+        content: '🚪';
+        font-size: 18px;
+    }
+
+    /* Conteúdo */
+    .main-content {
+        margin-left: 60px;
+        padding: 10px;
+    }
+
+    /* Topbar */
+    .topbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .topbar h1 {
+        font-size: 20px;
+    }
+
+    /* Grids */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-icon {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-info h3 {
+        font-size: 24px;
+    }
+
+    /* Tabelas */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table-container table {
+        font-size: 12px;
+        min-width: 600px;
+    }
+
+    .table-container thead th,
+    .table-container tbody td {
+        padding: 8px 10px;
+    }
+
+    /* Filtros */
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select,
+    .search-bar input {
+        width: 100%;
+    }
+
+    /* Calendário */
+    #calendario {
+        gap: 2px;
+    }
+
+    .calendar-day {
+        padding: 8px;
+        font-size: 11px;
+        min-height: 40px;
+    }
+
+    /* Login */
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-logo h1 {
+        font-size: 36px;
+    }
+}
+
+/* ==========================================
+   CELULARES PEQUENOS (até 480px)
+   ========================================== */
+
+@media (max-width: 480px) {
+    /* Sidebar */
+    .sidebar {
+        width: 50px;
+    }
+
+    .main-content {
+        margin-left: 50px;
+        padding: 5px;
+    }
+
+    /* Topbar */
+    .topbar {
+        padding: 10px;
+    }
+
+    .topbar h1 {
+        font-size: 18px;
+    }
+
+    /* Cards */
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Botões */
+    .btn-primary {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .btn-back {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    /* Tabela */
+    .table-container table {
+        font-size: 11px;
+    }
+
+    /* Calendário */
+    .calendar-day {
+        padding: 5px;
+        font-size: 10px;
+        min-height: 30px;
+    }
+
+    .calendar-nav span {
+        font-size: 14px;
+        min-width: 100px;
+    }
+}
+
+/* ==========================================
+   MODOS ESPECIAIS
+   ========================================== */
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #121212;
+        color: #e0e0e0;
+    }
+
+    .topbar,
+    .stat-card,
+    .table-container,
+    .config-section,
+    .notificacao-card,
+    .login-box {
+        background: #1e1e1e;
+        color: #e0e0e0;
+    }
+
+    .stat-info h3,
+    .stat-info p,
+    .config-section h3 {
+        color: #e0e0e0;
+    }
+
+    .table-container tbody tr:hover {
+        background: #2a2a2a;
+    }
+
+    .table-container tbody tr {
+        border-bottom-color: #333;
+    }
+}
+
+/* ==========================================
+   IMPRESSÃO
+   ========================================== */
+
+@media print {
+    .sidebar,
+    .sidebar-footer,
+    .btn-primary,
+    .btn-back,
+    .btn-acao {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .table-container {
+        box-shadow: none;
+    }
+}
