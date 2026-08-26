@@ -10,8 +10,7 @@
     "strict": false,
     "noImplicitAny": false,
     "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["node"]
+    "allowSyntheticDefaultImports": true
   },
   "include": ["bot/**/*.ts"],
   "exclude": ["node_modules", "dist", "tests", "admin"]
