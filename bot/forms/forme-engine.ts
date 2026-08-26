@@ -3,8 +3,8 @@
 // ==========================================
 
 import { Context } from 'telegraf';
-import { logger } from '../config/logger';
-import { sessionManager } from '../flows/session-manager';
+import { logger } from '../../config/logger';
+import { sessionManager } from '../../flows/session-manager';
 
 // ==========================================
 // TIPOS DO FORMULÁRIO
