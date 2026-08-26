@@ -1,0 +1,10 @@
+# FOFOCA BOT - Documentação do Mercado Pago
+
+## 🔌 Integração
+
+### Configuração
+
+```env
+MERCADO_PAGO_ACCESS_TOKEN=
+MERCADO_PAGO_PUBLIC_KEY=
+MERCADO_PAGO_WEBHOOK_SECRET=
