@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fofoca Bot - Login Admin</title>
+    <link rel="stylesheet" href="../admin-assets/css/admin.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-logo">
+                <h1>🔐</h1>
+                <h2>Fofoca Bot</h2>
+                <p>Painel Administrativo</p>
+            </div>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu usuário" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                
+                <button type="submit" class="btn-login">Entrar</button>
+                
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../admin-assets/js/admin.js"></script>
+</body>
+</html>
