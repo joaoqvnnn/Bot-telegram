@@ -4,7 +4,7 @@
     "module": "commonjs",
     "lib": ["ES2022"],
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "./bot",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -20,27 +20,15 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": "./bot",
     "paths": {
-      "@/*": ["./*"],
-      "@bot/*": ["./bot/*"],
-      "@flows/*": ["./flows/*"],
-      "@forms/*": ["./forms/*"],
-      "@validation/*": ["./validation/*"],
-      "@security/*": ["./security/*"],
-      "@approval/*": ["./approval/*"],
-      "@advertising/*": ["./advertising/*"],
-      "@payments/*": ["./payments/*"],
-      "@notifications/*": ["./notifications/*"],
-      "@database/*": ["./database/*"],
-      "@api/*": ["./api/*"],
-      "@config/*": ["./config/*"]
+      "@/*": ["./*"]
     },
     "types": ["node", "jest"],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["bot/**/*.ts"],
   "exclude": ["node_modules", "dist", "tests"]
 }
