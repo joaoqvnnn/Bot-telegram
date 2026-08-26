@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fofoca Bot - Admin</title>
+    <link rel="stylesheet" href="../admin-assets/css/admin.css">
+</head>
+<body>
+    <script>
+        // Redirecionar para login se não autenticado
+        const token = localStorage.getItem('admin_token');
+        
+        if (token) {
+            window.location.href = '/admin/dashboard.html';
+        } else {
+            window.location.href = '/admin/login.html';
+        }
+    </script>
+</body>
+</html>
