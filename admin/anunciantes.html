@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fofoca Bot - Anunciantes</title>
+    <link rel="stylesheet" href="../admin-assets/css/admin.css">
+    <link rel="stylesheet" href="../admin-assets/css/tables.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>🔐 Fofoca Bot</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html">
+                    <span>📊</span> Dashboard
+                </a>
+                <a href="solicitacoes.html">
+                    <span>📥</span> Solicitações
+                </a>
+                <a href="anunciantes.html" class="active">
+                    <span>👥</span> Anunciantes
+                </a>
+                <a href="campanhas.html">
+                    <span>📢</span> Campanhas
+                </a>
+                <a href="calendario.html">
+                    <span>📅</span> Calendário
+                </a>
+                <a href="formatos.html">
+                    <span>📦</span> Formatos
+                </a>
+                <a href="precos.html">
+                    <span>💰</span> Preços
+                </a>
+                <a href="regras.html">
+                    <span>⚙️</span> Regras
+                </a>
+                <a href="aprovacoes.html">
+                    <span>🟢</span> Aprovados
+                </a>
+                <a href="recusas.html">
+                    <span>🔴</span> Recusados
+                </a>
+                <a href="revisoes.html">
+                    <span>🟡</span> Em revisão
+                </a>
+                <a href="pagamentos.html">
+                    <span>💳</span> Pagamentos
+                </a>
+                <a href="usuarios.html">
+                    <span>👥</span> Usuários
+                </a>
+                <a href="seguranca.html">
+                    <span>🔐</span> Segurança
+                </a>
+                <a href="logs.html">
+                    <span>📜</span> Logs
+                </a>
+                <a href="notificacoes.html">
+                    <span>🔔</span> Notificações
+                </a>
+                <a href="equipe.html">
+                    <span>👨‍💼</span> Equipe
+                </a>
+                <a href="configuracoes.html">
+                    <span>⚙️</span> Configurações
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn-logout">Sair</button>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1>👥 Anunciantes</h1>
+            </header>
+
+            <!-- Busca -->
+            <div class="search-bar">
+                <input type="text" id="busca-anunciante" placeholder="Buscar anunciante...">
+            </div>
+
+            <!-- Tabela -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Username</th>
+                            <th>Solicitações</th>
+                            <th>Campanhas</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-anunciantes">
+                        <!-- Dados carregados via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../admin-assets/js/anunciantes.js"></script>
+</body>
+</html>
