@@ -1,9 +1,3 @@
-
----
-
-## package.json
-
-```json
 {
   "name": "fofoca-bot",
   "version": "1.0.0",
@@ -12,27 +6,12 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only bot/server.ts",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write .",
-    "migrate": "ts-node src/database/migrations/run.ts",
-    "seed": "ts-node src/database/seeds/run.ts",
+    "migrate": "ts-node bot/database/migrations/run.ts",
+    "seed": "ts-node bot/database/seeds/run.ts",
     "type-check": "tsc --noEmit"
   },
-  "keywords": [
-    "telegram",
-    "bot",
-    "publicidade",
-    "mercadopago",
-    "automação",
-    "typescript",
-    "nodejs"
-  ],
-  "author": "",
-  "license": "ISC",
   "engines": {
     "node": ">=18.0.0"
   },
