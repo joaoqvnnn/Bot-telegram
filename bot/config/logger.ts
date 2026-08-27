@@ -9,3 +9,4 @@ export const logger = {
     console.warn(`[WARN] ${mensagem}`, ...args);
   },
 };
+export default logger;
