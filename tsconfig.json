@@ -10,11 +10,7 @@
     "strict": false,
     "noImplicitAny": false,
     "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./bot",
-    "paths": {
-      "*": ["*"]
-    }
+    "allowSyntheticDefaultImports": true
   },
   "include": ["bot/**/*.ts"],
   "exclude": ["node_modules", "dist", "tests", "admin"]
