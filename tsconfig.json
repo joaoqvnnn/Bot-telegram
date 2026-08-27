@@ -10,7 +10,8 @@
     "strict": false,
     "noImplicitAny": false,
     "removeComments": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2020", "DOM"]
   },
   "include": ["bot/**/*.ts"],
   "exclude": ["node_modules", "dist", "tests", "admin"]
